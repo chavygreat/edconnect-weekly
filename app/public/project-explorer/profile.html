@@ -1,72 +1,136 @@
 <!DOCTYPE html>
  <html>
-     <header>
-         <h1>Project Explorer</h1>
-         <h2>One Stop Database For Academic Projects</h2>
-     </header>
+    <header>
+        <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style> .navbar {background-color: rgb(86, 86, 175);} </style>
+    </header>
 
-     <nav>
-                <a href="index.html"><strong>Home</strong></a>
-                <a href="search.html"><strong>Projects</strong></a>
-                <a href="login.html"><strong>Login</strong></a>
-                <a href="register.html"><strong>Register</strong></a>
-                <a href="createproject.html"><strong>Submit</strong></a>
-     </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+       <a class="navbar-brand" href="index.html">Project Explorer</a>
+       <form class="form-inline">
+           <div class="form-group">
+               <input type="searchForm" class="form-control" placeholder="Search Projects"> 
+           </div>
+           <div class="form-group">
+               <a class="btn btn-outline-light" href="search.html"><strong>Search</strong></a>
+           </div>
+             </form>
+       <a class="nav-link" href="createproject.html"><strong>Submit</strong></a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+      <div class="navbar-nav mr-auto">
+       <a class="nav-link" href="Register.html"><strong>Sign Up</strong></a>
+       <a class="nav-link" href="login.html"><strong>Login</strong></a>
+       <a class="nav-link" href="profile.html"><strong>Profile</strong></a>
+       <a class="nav-link" href="editproject.html"><strong>Editproject</strong></a>
+       <a class="nav-link" href="viewproject.html"><strong>Viewproject</strong></a>
+      </div>
+    </nav>
 
      <main>
-         <h1>Profile Summary</h1>
-         <strong>John Doe</strong>
-         <br>
-         John.doe@gmail.com
-         <br>
-         <ul>
-             <li>Program: Computer Science</li>
-             <li>Matric Number: 00/000</li>
-             <li>Graduation Year: 2019</li>
-         </ul>
-         <h2>Update Profile</h2>
-         <form>
-             <div> First Name: <input type="text" name="firstName" /> </div>
+        <div class="container">
+            <br>
+             <h1>Great Chavuko</h1> Great.mrebavuevwe@gmail.com    
              <br>
-             <div> Last Name: <input type="text" name="lastName" /></div>
-             <br>
-             <div> Email Adress: <input type="email" name="email" /> </div>
-             <br>
-             <div> MatricNumber: <input type="text" name="matricNumber" /></div>
-             <br>
-             <div> Program: <select name="program">
-                <option value="computer_science"> Computer Science</option>
-                <option value="computer_information_systems"> Computer Information Systems </option>
-                <option value="computer_technology"> Computer Technology </option>
-               </select>
+            <div class="row">
+              <div class="col-sm-4" style="background-color:lightblue;">
+             <p>Program <br> Computer Information Science</p>
+              </div>
+              <div class="col-sm-4" style="background-color:lightblue;">
+            <p>Matric number <br> 33/333</p>     
+              </div>
+              <div class="col-sm-4" style="background-color:lightblue;">
+            <p>Graduation year <br> 2019</p>
+              </div>
             </div>
-              <br>
-            <div> Graduation Year: <select name="graduationYear">
-               <option value="2013"> 2013 </option>
-               <option value="2014"> 2014 </option>
-               <option value="2015"> 2015 </option>
-               <option value="2016"> 2016 </option>
-               <option value="2017"> 2017 </option>
-               <option value="2018"> 2018 </option>
-               <option value="2019"> 2019 </option>
-               <option value="2020"> 2020 </option>
-              </select>
-           </div>
-           <br>
-             <input type="submit" />
+         <br>
+         
+         <form>
+            <div class="container">
+            <div class="form-group">
+                <h2>Update Profile</h2>
+            <div class="form-row mx-auto w-75">
+              <div class="col">
+                <label for="First name">First name:</label>
+                <input type="text" class="form-control" id="First name" placeholder="First name" name="First name">
+              </div>
+              <div class="col">
+                <label for="Last name">Last name:</label>
+                <input type="text" class="form-control" id= "Last name" placeholder="Last name" name="Last name">
+              </div>
+            </div>
+            <br>
+            <div class="form-row mx-auto w-75">
+              <div class="col">
+                <label for="Email Address">Email Address:</label>
+                <input type="text" class="form-control" id="email" placeholder="Your Email address" name="email">
+              </div>
+              <div class="col">
+                <label for="Program">Program:</label>
+              <select class="form-control">
+                 <option value="Choose...">Choose...</option>
+                 <option value="computer_science"> Computer Science</option>
+                 <option value="computer_information_systems"> Computer Information Systems </option>
+                 <option value="computer_technology"> Computer Technology </option>
+               </select>
+              </div>
+            </div>
+            <br>
+            <div class="form-row mx-auto w-75">
+            <div class="col">
+                <label for="Matriculation number">Matriculation number:</label>
+                <input type="alphanumeric" class="form-control" placeholder="eg 16/2020" name="Matriculation number">  
+              </div>
+              <div class="col"> 
+                <label for="Graduation Year">Graduation year</label>
+                <select class="form-control">
+                <option value="Choose...">Choose...</option>
+                <option value="2013"> 2013 </option>
+                <option value="2014"> 2014 </option>
+                <option value="2015"> 2015 </option>
+                <option value="2016"> 2016 </option>
+                <option value="2017"> 2017 </option>
+                <option value="2018"> 2018 </option>
+                <option value="2019"> 2019 </option>
+                <option value="2020"> 2020 </option>
+               </select>
+              </div>
+            </div>
+            </div>
+            <br>
+                <button type="button mx-auto w-75" class="btn btn-primary">Update Profile</button>
+             </div>
+         </div>
+          </form> <br>
+
+        
+          <form>
+          <div class="form-group">
+            <h2>Change Password</h2>
+          <div class="form-row mx-auto w-75">
+            <div class="col">
+              <label for="First name">First name:</label>
+              <input type="password" class="form-control" id="First name" placeholder="Current Password" name="Current password">
+            </div>
+            <div class="col">
+                <label for="First name">First name:</label>
+                <input type="password" class="form-control" id="New password" placeholder="New password" name="New password">
+              </div>
+            <div class="col">
+                <label for="First name">First name:</label>
+                <input type="password" class="form-control" id="Confirm new password" placeholder="Confirm new password" name="Confirm new password">
+            </div>
+          </div>
+          </div>
+            <br>
+            <div class="container">
+                <button type="button mx-auto w-75" class="btn btn-primary">Change Password</button>
          </form>
-
-        <h3>Change Password</h3>
-        <form>
-            <div> Current Password: <input type="password" name="currentPassword" /> </div>
-            <br>
-            <div> New Password: <input type="password" name="newPassword" /></div>
-            <br>
-            <div> Confirm Password: <input type="password" name="confirmPassword" /></div>
-            <br>
-            <input type="submit" />
-        </form>
-
+          <br>
+          <div class="card text-right">
+            <div class="card-footer"> 
+            <p class="card-text">Project Explorer @2020<strong> Edconnect</strong></p> 
+         </div>
+        </div>
      </main>
 
       </html>

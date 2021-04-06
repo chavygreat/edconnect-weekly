@@ -4,6 +4,7 @@
         <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <style> .navbar {background-color: rgb(86, 86, 175);} 
         .container {text-align:left auto;}
+        #form-login {text-align: center;}
         </style>
     </header>
 
@@ -22,16 +23,20 @@
       <div class="navbar-nav mr-auto">
        <a class="nav-link" href="Register.html"><strong>Sign Up</strong></a>
        <a class="nav-link" href="login.html"><strong>Login</strong></a>
+       <a class="nav-link" href="profile.html"><strong>Profile</strong></a>
+       <a class="nav-link" href="editproject.html"><strong>Editproject</strong></a>
+       <a class="nav-link" href="viewproject.html"><strong>Viewproject</strong></a>
       </div>
     </nav>
 
      <main>
-         <div class="container">
+        <div class="container">
 
             <br><br>
-         <h1>Login</h1>
+          <h1 id="form-login">Login</h1>
+    
      
-         <form>
+          <form>
              <div class="form-group mx-auto w-75"> 
                  <label for="Email address">Email address:</label>
                  <input type="email" class="form-control" placeholder="Enter email">
@@ -40,18 +45,17 @@
              <div class="form-group mx-auto w-75">
                 <label for="Password:">Password:</label>
                 <input type="password" class="form-control" placeholder="password" />
-            </div>
-             <br>
-             <div class="container">
-                <button type="button mx-auto w-75" class="btn btn-primary">Login</button>
              </div>
+             <br>
+             <button type="button mx-auto w-75" class="btn btn-primary">Login</button>
          </form>
          <br>
          <div class="card text-right">
             <div class="card-footer"> 
             <p class="card-text">Project Explorer @2020<strong> Edconnect</strong></p> 
             </div>
-        </div>
+          </div>
+       </div>
 
      </main>
 
