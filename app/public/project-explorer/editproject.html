@@ -25,77 +25,86 @@
            </div>
          </nav>
      
-     <main> 
-        <div class="container">
-            <br> <h2>Project 1</h2><br>
-         <div class="row">
-            <div class="col">
-                <p>Created By: <br>John Doe</p>
-            </div>
-            <div class="col">
-                <p>Date Created: <br> 00/00/0000</p>
-            </div>
-            <div class="col">
-                <p>Last Updated: <br> 01/10/2021</p>
-            </div>
-          <div class="d-flex p-2 bd-highlight">
-            <div class="col">
-                <a class="btn btn-primary" href="viewproject.html">View Project</a>
-            </div>
-          </div>
-         </div>
-    
-         <form>
-            <div class="form-group" class="bg-light p-3"><br>
-                     <h5>Edit Project</h5>
-                <div class="form-row mx-auto">
-                    <div class="col">
-                       <label for="Project name">Project name:</label>
-                       <input type="text" class="form-control" id="name" placeholder="Project 1" name="name"/>
-                    </div>
-                    <div class="col">
-                       <label> Manage Project files </label>
-                       <input type="file" class="form-control" id="upload file" placeholder="Click to open the browser" name="projectFile"/>
-                 </div>
-                </div> <br>
+    <main>
+        <div class="container mt-4">
+            <h3><strong>Project 1</strong></h3>
+        </div>
         
-                <div class="form-row mx-auto">
-                    <div class="col">
-                       <label for="Project abstract">Project abstract:</label>
-                        <textarea type="text" class="form-control" id="abstract" 
-                        placeholder="Project 1 is a very interesting topic" name="abstract" rows="6" cols="100"></textarea>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Created by<br/>
+                    Greatchavy</p>
+                </div>
+                <div class="col">
+                    <p>Date Created<br/>
+                    04/04/2021</p>
+                </div>
+                <div class="col">
+                    <p>Last Updated<br/>
+                    04/04/2021</p>
+                </div>
+                <div class="col text-right"> 
+                    <a href="viewproject.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2><strong>Edit Project</strong></h2>
+                    <hr />
+                    <div class="form">
+                        <form name="editProject">
+                            <div class="form-group">
+                                <label>Project Name </label>
+                                <input type="text" name="name" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label>Project Abstract</label>
+                                <textarea type="text" name="abstract" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Authors </label>
+                                <input type="text" name="authors" class="form-control" />
+                            </div>
+                            <div>
+                                <label>Tag(s): <br /></label>
+                                <input type="text" name="tags" class="form-control mb-2" />
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit">Save</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col">
+                </div>
+        
+                <div class="col">
+                    <h2><strong>Manage project Files</strong></h2>
+                    <hr />
+                    <div class="form-group">
+                        <label>Upload File: <br /></label>
+                        <input type="file" name="projectFile" class="form-control" /><br />
+                    </div>
                     <div class="card">
-                          <h5 class="card-header">Project files</h5>
-                        <div class="card-body">
-                         <h5 class="card-title"></h5>
-                          <p class="card-text">No file Uploaded yet</p>
+                        <div class="card-header">
+                            Project files
                         </div>
-                    </div>
+                        <div class="card-body">
+        
+                            <p class="card-text">No file uploaded yet</p>
+                        </div>
                     </div>
                 </div>
             </div>
-         </form>
-
-         <div class="form-group mb-2">
-              <label for="Author(s)">Author(s):</label>
-              <input type="text" class="form-control" placeholder="Ade Chris" id="authors" name="authors">
-         </div><br>
-         <div class="form-row mb-2">
-                <label for="Tag(s)">Tag(s):</label>
-                <input type="text" class="form-control" placeholder="#web" id="tags" name="tags"> 
-         </div> 
         </div>
-          <br>
-          <div class="container mx-auto">
-            <button type="button" class="btn btn-primary">Save</button>
-          </div> <br>
-         <div class="card text-right">
-         <div class="card-footer"> 
-         <p class="card-text">Project Explorer @2020<strong> Edconnect</strong></p> 
-         </div>
-         </div>
-     </div>
+        
+        
+        <footer class="container">
+            <div class="d-flex justify-content-end bg-light">
+              <p>Project Explorer 2020&copy; - <strong>Edconnect</strong></p>
+              </div>
+            </footer>
     </main>
 </html>
